@@ -19,12 +19,13 @@ const HeroSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-[#091e79] to-[#00d4ff] bg-clip-text text-transparent">
-                Full Stack Developer
+              Amar Kumar Prajapati
+              </h1>
+              <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-[#091e79] to-[#00d4ff] bg-clip-text text-transparent">
+                MERN Stack Developer
               </h1>
               <p className="text-gray-700 text-lg mb-8">
-                Passionate about creating innovative web solutions with 5+ years
-                of experience in building scalable applications using modern
-                technologies.
+              I specialize in creating innovative solutions and building scalable web applications.
               </p>
               <Button
                 type="primary"

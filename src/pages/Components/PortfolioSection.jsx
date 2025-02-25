@@ -40,6 +40,8 @@ const PortfolioSection = () => {
                   <div className="flex space-x-4">
                     <Button
                       type="primary"
+                      href={ project.link}
+                      target="_blank"
                       className="bg-gradient-to-r from-[#091e79] to-[#00d4ff] border-none !rounded-button whitespace-nowrap"
                     >
                       Live Demo

@@ -1,4 +1,5 @@
 import React from 'react'
+import { SkillsExpertise } from '../../Data/Dummydata'
 
 const SkillsSection = () => {
   return (
@@ -9,52 +10,7 @@ const SkillsSection = () => {
             Skills & Expertise
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                category: "Frontend",
-                icon: "fa-laptop-code",
-                skills: [
-                  { name: "React/Next.js", level: 95 },
-                  { name: "Vue/Nuxt.js", level: 90 },
-                  { name: "TypeScript", level: 88 },
-                  { name: "Tailwind CSS", level: 92 },
-                  { name: "WebGL/Three.js", level: 85 },
-                ],
-              },
-              {
-                category: "Backend",
-                icon: "fa-server",
-                skills: [
-                  { name: "Node.js/Express", level: 92 },
-                  { name: "Python/Django", level: 88 },
-                  { name: "Java Spring", level: 85 },
-                  { name: "GraphQL", level: 90 },
-                  { name: "RESTful APIs", level: 94 },
-                ],
-              },
-              {
-                category: "Database",
-                icon: "fa-database",
-                skills: [
-                  { name: "PostgreSQL", level: 90 },
-                  { name: "MongoDB", level: 92 },
-                  { name: "Redis", level: 88 },
-                  { name: "Elasticsearch", level: 85 },
-                  { name: "Firebase", level: 89 },
-                ],
-              },
-              {
-                category: "DevOps",
-                icon: "fa-cloud",
-                skills: [
-                  { name: "Docker/K8s", level: 88 },
-                  { name: "AWS/Azure", level: 90 },
-                  { name: "CI/CD", level: 92 },
-                  { name: "Terraform", level: 85 },
-                  { name: "Linux/Shell", level: 89 },
-                ],
-              },
-            ].map((category) => (
+            {SkillsExpertise.map((category) => (
               <div
                 key={category.category}
                 className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"

@@ -34,7 +34,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800">Email</h3>
-                    <p className="text-gray-600">john.anderson@example.com</p>
+                    <p className="text-gray-600">Amar Kumar Prajapati</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -43,7 +43,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800">Location</h3>
-                    <p className="text-gray-600">New York, United States</p>
+                    <p className="text-gray-600">Mumbai</p>
                   </div>
                 </div>
               </div>
