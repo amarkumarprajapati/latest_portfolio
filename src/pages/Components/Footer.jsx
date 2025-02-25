@@ -1,5 +1,5 @@
 import React from "react";
-import {
+import Icon, {
   DownloadOutlined,
   GithubOutlined,
   LinkedinOutlined,
@@ -14,10 +14,8 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div>
-              <h3 className="text-xl font-bold mb-4">John Anderson</h3>
-              <p className="text-gray-200">
-                Full Stack Developer based in New York
-              </p>
+              <h3 className="text-xl font-bold mb-4">Amar Kumar Prajapati</h3>
+              <p className="text-gray-200">MERN Stack developer</p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
@@ -57,14 +55,26 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Connect</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-white hover:text-gray-200 text-2xl">
+                <a
+                  href="https://github.com/amarkumarprajapati?tab=repositories"
+                  target="_blanks"
+                  className="text-white hover:text-gray-200 text-2xl"
+                >
                   <GithubOutlined />
                 </a>
-                <a href="#" className="text-white hover:text-gray-200 text-2xl">
+                <a
+                  href="https://www.linkedin.com/in/amar-kumar-prajapati-76255072/"
+                  className="text-white hover:text-gray-200 text-2xl"
+                  target="_blanks"
+                >
                   <LinkedinOutlined />
                 </a>
-                <a href="#" className="text-white hover:text-gray-200 text-2xl">
-                  <TwitterOutlined />
+                <a
+                  href="https://www.facebook.com/amarkk1/"
+                  className="text-white hover:text-gray-200 text-2xl"
+                  target="_blanks"
+                >
+                  <Icon type="facebook" />
                 </a>
               </div>
             </div>

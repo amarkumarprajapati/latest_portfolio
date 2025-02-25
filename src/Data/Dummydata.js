@@ -46,21 +46,24 @@ export let portfilio = [
     image: AI,
     tags: ["Vite + React", "Tailwind CSS", "Rapidapi.com (API)"],
     link: "https://ai-summery.netlify.app/",
+    gitlink:"https://github.com/amarkumarprajapati/AI-text-Generator.git"
   },
   {
     title: "Ecomm-Website",
     description:
       "Developed an online grocery delivery platform for convenient shopping and delivery",
-    image: Music,
+    image: ecomm,
     tags: ["Vite + React", "Antd", "Tailwind CSS"],
     link: "https://ecommak.netlify.app/",
+    gitlink:"https://github.com/amarkumarprajapati/Ecomm.git"
   },
   {
     title: "Music Player",
     description: "rontend - react, tailwind css, html and express , mongodb",
-    image: ecomm,
+    image: Music,
     tags: ["Vite + React", "Tailwind CSS", "AWS"],
     link: "https://musicwebappplay.netlify.app/",
+    gitlink:"https://github.com/amarkumarprajapati/music_Frontend.git"
   },
   {
     title: "T-shirt",
@@ -69,6 +72,7 @@ export let portfilio = [
     image: shirts,
     tags: ["Vite + React", "Tailwind CSS", "Three.js"],
     link: "https://tshirts123.netlify.app/",
+    gitlink:"https://github.com/amarkumarprajapati/T-shirts_frontend.git"
   },
 ];
 

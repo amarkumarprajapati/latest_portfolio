@@ -7,7 +7,7 @@ const SkillsSection = () => {
        <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#091e79] to-[#00d4ff] bg-clip-text text-transparent">
-            Skills & Expertise
+            Skills
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {SkillsExpertise.map((category) => (

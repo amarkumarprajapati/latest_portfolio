@@ -1,21 +1,23 @@
-
 import React from "react";
 import { Button, Form, Input, message } from "antd";
 
-
 const ContactSection = () => {
-  const onFinish = () => {
-    messageApi.success("Message sent successfully!");
-    form.resetFields();
-  };
   const [form] = Form.useForm();
   const [messageApi, contextHolder] = message.useMessage();
+
+  const onFinish = (values) => {
+    const { name, email, subject, message: userMessage } = values;
+    const phoneNumber = "8908013842";
+    const text = `Hello, I am ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${userMessage}`;
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
+    window.open(whatsappURL, "_blank");
+    messageApi.success("Redirecting to WhatsApp...");
+    form.resetFields();
+  };
+
   return (
     <div>
-      <section
-    
-        className="py-20 bg-gradient-to-br from-[#091e79]/5 to-[#00d4ff]/5"
-      >
+      <section className="py-20 bg-gradient-to-br from-[#091e79]/5 to-[#00d4ff]/5">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
@@ -123,7 +125,7 @@ const ContactSection = () => {
                     className="bg-gradient-to-r from-blue-600 to-purple-600 border-none !rounded-button whitespace-nowrap h-12 text-base font-semibold hover:shadow-lg transition-shadow"
                   >
                     <i className="fas fa-paper-plane mr-2"></i>
-                    Send Message
+                    Send Message via WhatsApp
                   </Button>
                 </Form.Item>
               </Form>

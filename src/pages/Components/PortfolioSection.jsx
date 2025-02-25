@@ -5,16 +5,13 @@ import { Button } from "antd";
 const PortfolioSection = () => {
   return (
     <div>
-      <section
-        
-        className="py-20 bg-gradient-to-br from-[#091e79]/5 to-[#00d4ff]/5"
-      >
+      <section className="py-20 bg-gradient-to-br from-[#091e79]/5 to-[#00d4ff]/5">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#091e79] to-[#00d4ff] bg-clip-text text-transparent">
-            Featured Projects
+            Personal Projects
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {portfilio.map((project, index) => (
+            {portfilio?.map((project, index) => (
               <div
                 key={index}
                 className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
@@ -40,13 +37,29 @@ const PortfolioSection = () => {
                   <div className="flex space-x-4">
                     <Button
                       type="primary"
-                      href={ project.link}
+                      href={project.link}
                       target="_blank"
-                      className="bg-gradient-to-r from-[#091e79] to-[#00d4ff] border-none !rounded-button whitespace-nowrap"
+                      className="bg-gradient-to-r from-[#091e79] to-[#00d4ff] border-none !rounded-button whitespace-nowrap hover:from-[#00d4ff] hover:to-[#091e79] transition-all duration-300"
+                      style={{
+                        background:
+                          "linear-gradient(to right, #091e79, #00d4ff)",
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.background =
+                          "linear-gradient(to right, #00d4ff, #091e79)";
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.background =
+                          "linear-gradient(to right, #091e79, #00d4ff)";
+                      }}
                     >
                       Live Demo
                     </Button>
-                    <Button className="!rounded-button whitespace-nowrap">
+                    <Button
+                      href={project.gitlink}
+                      target="_blank"
+                      className="!rounded-button whitespace-nowrap"
+                    >
                       Source Code
                     </Button>
                   </div>
