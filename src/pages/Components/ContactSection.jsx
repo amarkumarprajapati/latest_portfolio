@@ -117,16 +117,17 @@ const ContactSection = () => {
                   />
                 </Form.Item>
                 <Form.Item>
-                  <Button
-                    type="primary"
-                    htmlType="submit"
-                    size="large"
-                    block
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 border-none !rounded-button whitespace-nowrap h-12 text-base font-semibold hover:shadow-lg transition-shadow"
-                  >
-                    <i className="fas fa-paper-plane mr-2"></i>
-                    Send Message via WhatsApp
-                  </Button>
+                <Button
+  type="primary"
+  htmlType="submit"
+  size="large"
+  block
+  className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 border-none !rounded-button whitespace-nowrap h-12 text-base font-semibold hover:shadow-lg hover:from-green-500 hover:via-blue-600 hover:to-purple-700 transition-all"
+>
+  <i className="fas fa-paper-plane mr-2"></i>
+  Send Message via WhatsApp
+</Button>
+
                 </Form.Item>
               </Form>
             </div>
